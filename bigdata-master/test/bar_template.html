@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="./echarts.min.js"></script>
+</head>
+
+<body>
+    <div class="">bar test</div>
+    <div class="main" id="bar" style="height: 400px; width: 600px"></div>
+    <script type="text/javascript">
+        var barchart = echarts.init(document.getElementById("bar"));  // 初始化 echarts 并定位到画布
+        option = {
+  //  backgroundColor: '#00265f',
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    grid: {
+        left: '0%',
+		top:'10px',
+        right: '0%',
+        bottom: '4%',
+       containLabel: true
+    },
+    xAxis: [{
+        type: 'category',
+        data: ['湖北', '广东', '浙江', '河南', '湖南'],
+        axisLine: {
+            show: true,
+         lineStyle: {
+                color: "#d5110d",
+                width: 1,
+                type: "solid"
+            },
+        },
+
+        axisTick: {
+            show: false
+        },
+		axisLabel:  {
+                interval: 0,
+               // rotate:50,
+                show: true,
+                splitNumber: 15,
+                textStyle: {
+ 					color: "#d5110d",
+                    fontSize: '12',
+                },
+            },
+    }],
+    yAxis: [{
+        type: 'value',
+        axisLabel: {
+           //formatter: '{value} %'
+			show:true,
+			 textStyle: {
+ 					color: "#d5110d",
+                    fontSize: '12',
+                },
+        },
+        axisTick: {
+            show: false,
+        },
+        axisLine: {
+            show: true,
+            lineStyle: {
+                color: "#d5110d",
+                width: 1,
+                type: "solid"
+            },
+        },
+        splitLine: {
+            lineStyle: {
+               color: "rgba(255,255,255,.1)",
+            }
+        }
+    }],
+    series: [
+		{
+        type: 'bar',
+        data: [
+            ('湖北', 300),
+            ('广东', 250),
+            ('浙江', 200),
+            ('河南', 150),
+            ('湖南', 100)
+        ],
+        barWidth:'35%', //柱子宽度
+       // barGap: 1, //柱子之间间距
+        itemStyle: {
+            normal: {
+                color:'#d5110d',
+                opacity: 1,
+				barBorderRadius: 5,
+            }
+        }
+    }
+
+	]
+};
+        barchart.setOption(option);
+    </script>
+</body>
+</html>

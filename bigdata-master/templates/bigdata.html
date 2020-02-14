@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://www.17sucai.com/preview/1528155/2019-04-16/ds/index.html -->
+<html style="font-size: 68.3px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>index</title>
+    <script type="text/javascript" src="/static/jquery.js"></script>
+    <link rel="stylesheet" href="/static/comon0.css">
+<script>
+    $(window).load(function () {
+        $(".loading").fadeOut()
+    })
+
+
+    $(document).ready(function () {
+        var whei = $(window).width();
+        $("html").css({ fontSize: whei / 20 });
+        $(window).resize(function () {
+            var whei = $(window).width();
+            $("html").css({ fontSize: whei / 20 })
+        });
+    });
+</script><script type="text/javascript" src="/static/echarts.min.js"></script><script language="JavaScript" src="/static/js.js"></script><style class="mpa-style-fix ImageGatherer">.FotorFrame{position:fixed!important}</style><style class="mpa-style-fix SideFunctionPanel">.weui-desktop-online-faq__wrp{top:304px!important;bottom:none!important}.weui-desktop-online-faq__wrp .weui-desktop-online-faq__switch{width:38px!important}</style></head>
+
+
+
+<body mpa-version="6.10.2" mpa-extension-id="ibefaeehajgcpooopoegkifhgecigeeg">
+    <div class="canvas" style="opacity: .2">
+        <iframe frameborder="0" src="/static/index.html" style="width: 100%; height: 100%"></iframe>
+    </div>
+    <div class="loading" style="display: none;">
+        <div class="loadbox"> <img src="/static/loading.gif"> 页面加载中... </div>
+    </div>
+    <div class="head">
+        <h1>全国新型冠状病毒肺炎情况大数据统计</h1>
+        <div class="weather"><!--<img src="images/weather.png"><span>多云转小雨</span>--><span id="showTime">2019年12月25-10时10分59秒</span></div>
+
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000); 
+            function time() {
+                clearTimeout(t); 
+                dt = new Date();
+                var y = dt.getFullYear();
+                var mt = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var h = dt.getHours(); 
+                var m = dt.getMinutes(); 
+                var s = dt.getSeconds(); 
+                document.getElementById("showTime").innerHTML = y + "年" + mt + "月" + day + "-" + h + "时" + m + "分" + s + "秒";
+                t = setTimeout(time, 1000);  
+            }
+
+        </script>
+
+
+    </div>
+    <div class="mainbox">
+        <ul class="clearfix">
+            <li>
+                <div class="boxall" style="height: 3.2rem">
+                    <div class="alltitle">确诊城市</div>
+                    <div class="allnav" id="echart1" _echarts_instance_="ec_1577239837057" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 365px; height: 159px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="365" height="159" style="position: absolute; left: 0px; top: 0px; width: 365px; height: 159px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall" style="height: 3.2rem">
+                    <div class="alltitle">死亡数量</div>
+                    <div class="allnav" id="echart2" _echarts_instance_="ec_1577239837058" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 365px; height: 159px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="365" height="159" style="position: absolute; left: 0px; top: 0px; width: 365px; height: 159px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall" style="height: 3.2rem">
+                    <div style="height:100%; width: 100%;">
+                        <div class="sy" id="fb1" _echarts_instance_="ec_1577239837060" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 120px; height: 180px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="120" height="180" style="position: absolute; left: 0px; top: 0px; width: 120px; height: 180px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                        <div class="sy" id="fb2" _echarts_instance_="ec_1577239837061" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 121px; height: 180px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="121" height="180" style="position: absolute; left: 0px; top: 0px; width: 121px; height: 180px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                        <div class="sy" id="fb3" _echarts_instance_="ec_1577239837062" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 120px; height: 180px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="120" height="180" style="position: absolute; left: 0px; top: 0px; width: 120px; height: 180px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                    </div>
+                    <div class="boxfoot">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar">
+                    <div class="barbox">
+                        <ul class="clearfix">
+                            <li class="pulll_left counter" id="confirm">12581189</li>
+                            <li class="pulll_left counter" id="suspect">3912410</li>
+                        </ul>
+                    </div>
+                    <div class="barbox2">
+                        <ul class="clearfix">
+                            <li class="pulll_left">全国疫情确诊</li>
+                            <li class="pulll_left">全国疫情疑似</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="map1"><img src="/static/lbx.png"></div>
+                    <div class="map2"><img src="/static/jt.png"></div>
+                    <div class="map3"><img src="/static/map.png"></div>
+                    <div class="map4" id="map_1" _echarts_instance_="ec_1577239837065" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 1078px; height: 478px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;"><canvas data-zr-dom-id="zr_0" width="1078" height="478" style="position: absolute; left: 0px; top: 0px; width: 1078px; height: 478px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                </div>
+            </li>
+            <li>
+                <div class="boxall" style="height:3.4rem">
+                    <div class="alltitle">累计疫情走势</div>
+                    <div class="allnav" id="echart4" _echarts_instance_="ec_1577239837059" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 365px; height: 173px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="365" height="173" style="position: absolute; left: 0px; top: 0px; width: 365px; height: 173px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall" style="height: 3.2rem">
+                    <div class="alltitle">治愈数量</div>
+                    <div class="allnav" id="echart5" _echarts_instance_="ec_1577239837063" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 365px; height: 159px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="365" height="159" style="position: absolute; left: 0px; top: 0px; width: 365px; height: 159px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <!--<div class="boxall" style="height: 3rem">-->
+                    <!--<div class="alltitle">模块标题样式</div>-->
+                    <!--<div class="allnav" id="echart6" _echarts_instance_="ec_1577239837064" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 365px; height: 146px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="365" height="146" style="position: absolute; left: 0px; top: 0px; width: 365px; height: 146px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>-->
+                    <!--<div class="boxfoot"></div>-->
+                <!--</div>-->
+                <!--修改-->
+                <div class="boxall" style="height: 3.2rem">
+                    <div class="alltitle">世界疫情</div>
+                    <div class="allnav" id="echart5_1" _echarts_instance_="ec_1577239837064" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 365px; height: 159px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0" width="365" height="159" style="position: absolute; left: 0px; top: 0px; width: 365px; height: 159px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>
+                    <div class="boxfoot"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="back"></div>
+
+
+    <script type="text/javascript" src="/static/china.js"></script>
+    <script type="text/javascript" src="/static/area_echarts1.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                type: 'get',
+                url: '/get_ncov_totalcount',
+                dataType: 'json',
+                success: function (res) {
+                    document.getElementById("confirm").innerHTML = res['confirmedCount'];
+                    document.getElementById("suspect").innerHTML = res['suspectedCount']
+                }
+            })
+        });
+
+    </script>
+
+ 
+
+
+<div class="mpa-sc article-gatherer new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-article-gatherer"></div><div class="mpa-sc image-gatherer new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-image-gatherer"></div><div class="mpa-sc page-clipper new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-page-clipper"></div><div class="mpa-sc global-search new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-global-search"></div><div class="mpa-sc text-gatherer new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-text-gatherer"></div><div class="mpa-sc video-gatherer new mpa-rootsc" data-z="100" style="display: block;" id="mpa-rootsc-video-gatherer"></div><div class="mpa-sc side-function-panel new mpa-rootsc" data-z="110" style="display: block;" id="mpa-rootsc-side-function-panel"></div><div class="mpa-sc notifier new mpa-rootsc" data-z="120" style="display: block;" id="mpa-rootsc-notifier"></div><div class="mpa-sc notification-manager new mpa-rootsc" data-z="130" style="display: block;" id="mpa-rootsc-notification-manager"></div></body></html>
