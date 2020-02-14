@@ -1,13 +1,4 @@
 # encoding: utf-8
-
-"""
-@version: ??
-@author: Andy
-@file: GetData.py
-@time: 20/2/4 20:57
-"""
-
-
 import requests
 from redis_conn import redis_conn_pool
 import json

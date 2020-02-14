@@ -1,12 +1,4 @@
 # encoding: utf-8
-
-"""
-@version: ??
-@author: Andy
-@file: redis_conn.py
-@time: 20/2/10 12:20
-"""
-
 import redis
 
 

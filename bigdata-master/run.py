@@ -1,13 +1,5 @@
 # encoding: utf-8
 
-"""
-@version: ??
-@author: Andy
-@file: run.py
-@time: 20/2/7 14:49
-"""
-
-
 from flask import Flask, render_template, jsonify
 from redis_conn import redis_conn_pool
 import json
