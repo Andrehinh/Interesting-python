@@ -18,7 +18,7 @@
 - numpy
 - pymongo
 
-**注：具体分析说明可以关注微信公众号：[Alfred数据室](https://wx1.sinaimg.cn/mw690/007yVcwsgy1g03lo67ikoj30u00f0ta0.jpg)，阅读对应文章《[北上广深租房图鉴](https://mp.weixin.qq.com/s/sb-g7sGmPJPIsfF23INlmQ)》**
+
 
 
 ## Crawling and analysing Bei-Shang-Guang-Shen rent data from Lianjia.
