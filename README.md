@@ -46,7 +46,7 @@
    - numpy
    - pymongo
 
-## 2.实习僧网站数据挖掘、机器学习职位数据分析
+## 实习僧网站数据挖掘、机器学习职位数据分析
 
 This directory contains font_decode.py for crawling data from shixiseng.com, the data crawled from shixiseng.com(datamining.csv, machinelearning.csv, mlalgorithm.csv), and the codes for analysing the data(数据挖掘、机器学习算法实习生需求分析.ipynb).
 
@@ -143,7 +143,7 @@ BERT model was used to analyze electronic medical records
 
 
 
-## 4. Exploration and visualization of shared bike data sets
+##  Exploration and visualization of shared bike data sets
 
 Analyze the impact of mobike order data on cycling time; The influences of cycling time (including working days/weekends, peak hours/off-peak hours), cycling position and user value on cycling time were analyzed.
 
@@ -228,7 +228,7 @@ Due to the epidemic, the 2020 Tokyo Olympic Games will be postponed to 2021. Thi
 
 
 
-## 6. Data analysis and Visualization of world University rankings
+##  Data analysis and Visualization of world University rankings
 
 Selected by the QS World University Rankings 2021, which was published in June
 
